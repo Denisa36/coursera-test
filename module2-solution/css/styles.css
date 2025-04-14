@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.section-title
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+    background-color: coral;
+}
+
+.section
+{
+    position: relative;
+    border: 1px black;
+    background-color: bisque;
+    padding: 40px 15px 15px 15px;
+    margin: 10px;
+    float: left;
+}
+
+.container
+{
+    width: 100%;
+}
+
+.Italia
+{
+    background-color:rgb(20, 255, 165);
+}
+
+.Franta
+{
+    background-color: rgb(0, 183, 255);
+}
+
+.Spania
+{
+    background-color: rgb(220, 20, 63);
+}
+
+/*Pentru desktop*/
+@media (min-width:992px)
+{
+    .section
+    {
+        width: 31%;
+        margin: 1%;
+        float: left;
+        box-sizing: border-box;
+    }
+}
+
+/*Pentru tableta*/
+@media (min-width:768px) and (max-width:991px)
+{
+    .section
+    {
+        width: 48%;
+        margin: 1%
+    }
+
+    .section:nth-child(3)
+    {
+        width: 98%;
+        margin: 1%;
+    }
+}
+
+/*Pentru mobil*/
+@media (max-width:767px)
+{
+    .section
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
